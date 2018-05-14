@@ -1,0 +1,28 @@
+{
+  "name": "koa2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=development node bin/www",
+    "koa": "./node_modules/.bin/runkoa bin/www",
+    "pm2": "pm2 start bin/run ",
+    "test": "NODE_ENV=test mocha --compilers js:babel-core/register",
+    "start_koa": "bin/run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "install": "^0.11.0",
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "log4js": "^2.5.3",
+    "mysql": "^2.15.0",
+    "npm": "^6.0.1",
+    "runkoa": "^1.5.9"
+  }
+}
